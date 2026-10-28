@@ -1,0 +1,36 @@
+services:
+  - type: web
+    name: scroll-the-quran
+    runtime: static
+    buildCommand: python3 verify.py
+    staticPublishPath: ./public
+    autoDeployTrigger: off
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
+    headers:
+      - path: "/*"
+        name: X-Content-Type-Options
+        value: "nosniff"
+      - path: "/*"
+        name: Referrer-Policy
+        value: "no-referrer"
+      - path: "/*"
+        name: X-Frame-Options
+        value: "DENY"
+      - path: "/*"
+        name: Permissions-Policy
+        value: "camera=(), microphone=(), geolocation=()"
+      - path: "/*"
+        name: Content-Security-Policy
+        value: "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; worker-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'"
+      - path: "/sw.js"
+        name: Cache-Control
+        value: "no-cache"
+      - path: "/index.html"
+        name: Cache-Control
+        value: "no-cache"
+      - path: "/assets/*"
+        name: Cache-Control
+        value: "public, max-age=31536000, immutable"

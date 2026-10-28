@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />   <!-- first in <head>: how to read the page's letters, before anything else -->
+  <!-- Google tag (gtag.js) -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    if (location.hostname.replace(/^www\./, '') !== 'clearquran.com') window['ga-disable-G-BQPWDFTSVN'] = true;   // statistics only from the live site, not the test site or a copy on a computer
+    gtag('config', 'G-BQPWDFTSVN');
+
+    // Google's script itself (about 180 KB) is added once the page has loaded and the browser has a free moment,
+    // so it doesn't compete with the page. The lines above note the visit right away; the script sends it when it arrives.
+    window.addEventListener('load', function () {
+      var addGtag = function () {
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-BQPWDFTSVN';
+        document.head.appendChild(s);
+      };
+      if ('requestIdleCallback' in window)
+        requestIdleCallback(addGtag, { timeout: 3000 });
+      else
+        setTimeout(addGtag, 500);
+    });
+  </script>
+
+  <!-- No mobile redirect on this page: it works on phones and computers. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Download the Quran in English: PDF, MP3, EPUB, Word | ClearQuran</title>
+  <meta name="description" content="Free downloads of the Quran in English, ClearQuran translation: PDF, EPUB, Word, text, and MP3 audio. God and Allah editions, male and female voices." />
+  <meta name="author" content="Talal Itani" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://clearquran.com/download/" />
+
+  <meta property="og:url" content="https://clearquran.com/download/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Download the Quran in English: PDF, MP3, EPUB, Word | ClearQuran" />
+  <meta property="og:description" content="Free downloads of the Quran in English, ClearQuran translation: PDF, EPUB, Word, text, and MP3 audio. God and Allah editions, male and female voices." />
+  <meta property="og:image" content="https://clearquran.com/quran-in-english-logo-2.png" />
+  <meta property="og:site_name" content="Quran in English" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@ClearQuran" />
+  <meta name="twitter:title" content="Download the Quran in English: PDF, MP3, EPUB, Word | ClearQuran" />
+  <meta name="twitter:description" content="Free downloads of the Quran in English, ClearQuran translation: PDF, EPUB, Word, text, and MP3 audio. God and Allah editions, male and female voices." />
+  <meta name="twitter:image" content="https://clearquran.com/quran-in-english-logo-2.png" />
+
+  <script>
+    // Night mode, the same setting as the Quran reader (set before the page is drawn, so it doesn't flash white first)
+    try {
+      var night = localStorage.getItem('nightMode') || 'auto';     // Auto (follow the computer) unless the reader chose
+      if (night === 'on' || (night === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches))
+        document.documentElement.className += ' night';
+    } catch (e) {}
+  </script>
+  <link rel="stylesheet" href="/css/pages.css" />
+  <!-- The site's icon (browser tabs, home screen), and installing as an app (manifest.json, the same as the reader) -->
+  <link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48" />
+  <link rel="icon" href="/images/icon-192.png" sizes="192x192" type="image/png" />
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
+  <link rel="manifest" href="/manifest.json" />
+  <meta name="theme-color" content="#3a569e" />
+  <meta name="apple-mobile-web-app-title" content="ClearQuran" />
+  <script src="/js/pages.js" defer></script>
+</head>
+
+<body>
+  <!-- ===== TOP: link back to the Quran (computer style, then phone style) =====
+       data-back: goes back to the Quran page the visitor came from (see /js/pages.js);
+       otherwise to the home page. -->
+  <header class="site-header">
+    <a class="back back-desk" href="/" data-back><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 5l-7 7 7 7"/></svg>Read the Quran</a>
+    <a class="back back-mob" href="/" data-back><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 5l-7 7 7 7"/></svg>Read the Quran</a>
+  </header>
+
+  <!-- ===== PAGE CONTENT STARTS HERE ===== -->
+  <main class="page">
+    <h1>ClearQuran Downloads</h1>
+
+    <p>These Quran files are free to use, store, convert, and distribute, including in commercial projects. You don’t need to ask for permission. Just keep the translation’s wording unchanged and credit the source.</p>
+
+    <div class="note">
+      <!-- The copy icon after the credit line copies it (pages.js). Pasted into Word, Google Docs, email or a web page,
+           "ClearQuran.com" comes with its link; pasted where only plain text goes, it is plain text. -->
+      <p><strong>Credit line:</strong> <em>Translation by Talal Itani, <a href="https://clearquran.com">ClearQuran.com</a></em><button
+           type="button" class="copy-button" title="Copy the credit line" aria-label="Copy the credit line"
+           data-copy-text="Translation by Talal Itani, ClearQuran.com"
+           data-copy-html="Translation by Talal Itani, &lt;a href=&quot;https://clearquran.com&quot;&gt;ClearQuran.com&lt;/a&gt;"><svg
+           class="icon-copy" viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"/></svg><svg
+           class="icon-done" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></button></p>
+      <p>Where you can, please make “ClearQuran.com” a link to <a href="/">https://clearquran.com</a>. It helps others find the translation. One mention anywhere sensible is enough, such as an About screen, a video description, or a footer.</p>
+    </div>
+
+    <p class="editions">The translation comes in two editions: the <strong>God Edition</strong>, which refers to the Divine as “God,” and the <strong>Allah Edition</strong>, which uses “Allah.” Apart from the name, the two are the same. Use whichever suits you or your audience, or both.</p>
+
+    <!-- Sections share name="downloads" so only one is open at a time.
+         To add a file, copy one <li> line and change the address and the label. -->
+    <details class="section" name="downloads">
+      <summary>Text – God Edition</summary>
+      <ul class="files">
+        <li><a href="https://d.clearquran.com/text/clearquran-god-edition.pdf">PDF for phones</a></li>
+        <li><a href="https://d.clearquran.com/quran-in-english-clearquran-edtion-god-pdf-for-print.zip">PDF for printing</a></li>
+        <li><a href="https://d.clearquran.com/quran-arabic-english-clearquran-edition-god.pdf">PDF Arabic &amp; English</a></li>
+        <li><a href="https://d.clearquran.com/text/clearquran-god-edition.epub">eBook (EPUB)</a></li>
+        <li><a href="https://d.clearquran.com/text/clearquran-god-edition.docx">Word document</a></li>
+        <li><a href="https://d.clearquran.com/text/clearquran-txt-god-edition.zip">Plain text</a></li>
+      </ul>
+    </details>
+    <details class="section" name="downloads">
+      <summary>Text – Allah Edition</summary>
+      <ul class="files">
+        <li><a href="https://d.clearquran.com/text/clearquran-allah-edition.pdf">PDF for phones</a></li>
+        <li><a href="https://d.clearquran.com/quran-in-english-clearquran-edtion-allah-pdf-for-print.zip">PDF for printing</a></li>
+        <li><a href="https://d.clearquran.com/quran-arabic-english-clearquran.pdf">PDF Arabic &amp; English</a></li>
+        <li><a href="https://d.clearquran.com/text/clearquran-allah-edition.epub">eBook (EPUB)</a></li>
+        <li><a href="https://d.clearquran.com/text/clearquran-allah-edition.docx">Word document</a></li>
+        <li><a href="https://d.clearquran.com/text/clearquran-txt-allah-edition.zip">Plain text</a></li>
+      </ul>
+    </details>
+    <details class="section" name="downloads">
+      <summary>Audio – God Edition</summary>
+      <ul class="files">
+        <!-- <li><a href="https://d.clearquran.com/natural-awais-zip/audiobook-master-ollie-god-edition.zip">Male voice – master</a></li> -->
+        <li><a href="https://d.clearquran.com/natural-awais-zip/surahs-ollie-god-edition.zip">Male voice – surah by surah</a></li>
+        <li><a href="https://d.clearquran.com/natural-awais-zip/verses-ollie-god-edition.zip">Male voice – verse by verse</a></li>
+        <li class="gap" aria-hidden="true"></li>
+        <!-- <li><a href="https://d.clearquran.com/natural-awais-zip/audiobook-master-sonia-god-edition.zip">Female voice – master</a></li> -->
+        <li><a href="https://d.clearquran.com/natural-awais-zip/surahs-sonia-god-edition.zip">Female voice – surah by surah</a></li>
+        <li><a href="https://d.clearquran.com/natural-awais-zip/verses-sonia-god-edition.zip">Female voice – verse by verse</a></li>
+        <li class="gap" aria-hidden="true"></li>
+        <li><a href="https://d.clearquran.com/quran-mp3.zip">Classic voice – surah by surah</a></li>
+        <li><a href="https://d.clearquran.com/quran-verse-by-verse-mp3.zip">Classic voice – verse by verse</a></li>
+        <!-- <li><a href="https://d.clearquran.com/quran-arabic-english-mp3-edition-god.zip">Classic voice – Arabic &amp; English</a></li> -->
+      </ul>
+    </details>
+    <details class="section" name="downloads">
+      <summary>Audio – Allah Edition</summary>
+      <ul class="files">
+        <!-- <li><a href="https://d.clearquran.com/natural-awais-zip/audiobook-master-ollie-allah-edition.zip">Male voice – master</a></li> -->
+        <li><a href="https://d.clearquran.com/natural-awais-zip/surahs-ollie-allah-edition.zip">Male voice – surah by surah</a></li>
+        <li><a href="https://d.clearquran.com/natural-awais-zip/verses-ollie-allah-edition.zip">Male voice – verse by verse</a></li>
+        <li class="gap" aria-hidden="true"></li>
+        <!-- <li><a href="https://d.clearquran.com/natural-awais-zip/audiobook-master-sonia-allah-edition.zip">Female voice – master</a></li> -->
+        <li><a href="https://d.clearquran.com/natural-awais-zip/surahs-sonia-allah-edition.zip">Female voice – surah by surah</a></li>
+        <li><a href="https://d.clearquran.com/natural-awais-zip/verses-sonia-allah-edition.zip">Female voice – verse by verse</a></li>
+        <li class="gap" aria-hidden="true"></li>
+        <li><a href="https://d.clearquran.com/quran-in-english-clearquran-mp3-edition-allah.zip">Classic voice – surah by surah</a></li>
+        <li><a href="https://d.clearquran.com/quran-in-english-clearquran-mp3-verse-by-verse-edtion-allah.zip">Classic voice – verse by verse</a></li>
+        <!-- <li><a href="https://d.clearquran.com/quran-arabic-english-mp3-edition-allah.zip">Classic voice – Arabic &amp; English</a></li> -->
+      </ul>
+    </details>
+
+    <h2 id="license">License &amp; Usage</h2>
+    <p>ClearQuran files are released under the <a href="https://creativecommons.org/licenses/by-nd/4.0/">Creative Commons Attribution-NoDerivatives 4.0 International License (CC BY-ND 4.0)</a>.</p>
+    <p>As the copyright holder, I also grant these additional permissions. You may reformat, convert, and edit the text and audio files for your project. For example, you can save them in other formats, change the layout, split long verses, quote selected verses, cut or rearrange audio, or combine them with other content. The one condition is that you don’t change, add, or remove any words of the translation, and you include the credit.</p>
+    <p><strong>Readme files:</strong> If a readme file mentions a non-commercial license (CC BY-NC-ND), please disregard it. The terms on this page apply to all ClearQuran files, including commercial use.</p>
+  </main>
+  <!-- ===== PAGE CONTENT ENDS HERE ===== -->
+
+</body>
+</html>
